@@ -15,16 +15,16 @@ class ViewController: UIViewController {
     
     @IBAction private func additionButton(_ sender: Any) {
         count += 1
-        method()
+        updateLabel()
     }
     
     
     @IBAction private func clearButton(_ sender: Any) {
         count = 0
-        method()
+        updateLabel()
     }
     
-    func method() {
+    private func updateLabel() {
         outputLabel.text = String(count)
     }
 }
