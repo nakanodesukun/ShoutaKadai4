@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         updateLabel()
     }
     
-    func updateLabel() {
+   private func updateLabel() {
         outputLabel.text = String(count)
     }
 }
